@@ -1,0 +1,186 @@
+h1,
+p,
+span {
+  font-family: 'Kumbh Sans', sans-serif;
+  cursor: text;
+}
+
+body {
+  margin: 0;
+  position: absolute;
+  display: grid;
+  inset: 0;
+  align-content: center;
+  place-items: center;
+  background-image: linear-gradient(0deg, rgba(101, 101, 231, 1) 0%, rgba(175, 103, 233, 1) 50%);
+  background-attachment: fixed;
+}
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.FAQcard {
+  overflow: hidden;
+  position: static;
+  background-color: white;
+  display: block;
+  height: 515px;
+  width: 920px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-position-x: -570px;
+  background-position-y: -300px;
+  background-repeat: no-repeat;
+}
+
+.photos {
+  height: auto;
+}
+
+.boxWrapper {
+  position: absolute;
+}
+
+.Questions {
+  display: flex;
+  flex-direction: column;
+  margin-right: 95px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.QuestionInFlex:nth-child(7) {
+  margin-bottom: 15px;
+}
+
+.QuestionInFlex {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  height: auto;
+}
+
+.quiz:active {
+  font-weight: 700;
+  outline: 1px solid red;
+}
+
+.boxArt {
+  position: relative;
+  top: 120px;
+  right: 95px;
+  z-index: 1;
+}
+
+.WomanArt {
+  position: relative;
+  right: 80px;
+}
+
+.WomanArtMobile {
+  display: none;
+}
+
+.quiz {
+  background-color: transparent;
+  border: none;
+  width: 350px;
+  padding: 20px 20px 20px 0px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.quiz:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+/*
+.quiz:active {
+  transform: rotate(180deg);
+}
+*/
+
+.answerStyle {
+  width: 350px;
+  font-size: 15px;
+  overflow: hidden;
+  display: none;
+  word-break: break-word;
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .FAQcard {
+    margin-top: 100px;
+    overflow: visible;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-image: none;
+  }
+
+  /*
+  .QuestionInFlex {}
+  */
+
+  .photos {
+    height: 105px;
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+
+  }
+
+  .quiz {
+    padding: 20px 0px 20px 0px;
+    margin: 0;
+    width: 100%;
+    gap: 50px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .Questions {
+    margin: 0;
+  }
+
+  .WomanArt {
+    display: none;
+  }
+
+  .answerStyle {
+    font-size: 10px;
+    word-break: break-word;
+    width: 280px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .boxArt {
+    display: none;
+  }
+
+  .WomanArtMobile {
+    display: block;
+    width: 240px;
+    position: relative;
+    bottom: 110px;
+  }
+}
